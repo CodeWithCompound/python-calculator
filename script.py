@@ -20,6 +20,9 @@ def calculator():
             return
 
         print(f"Result: {result}")
+        playAgain = input("Another question? y/n: ")
+        if playAgain == 'y':
+            calculator()
 
     except ValueError:
         print("ERR: enter valid number (no letters)")
